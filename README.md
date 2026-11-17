@@ -1,4 +1,6 @@
 # 東海コスプレイベントカレンダー
 
-`python3 build.py [--base URL]` で docs/ を生成。データは data/events.json。
-公開: GitHub Pages（Settings → Pages → main /docs）
+愛知・静岡・岐阜・三重のコスプレイベントをまとめた静的サイトの元データです。
+公開URL: https://gzkb.github.io/tokai-cosplay/
+
+`data/events.json` を直すと、GitHub Actions が自動でサイトを作り直します。
