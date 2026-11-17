@@ -155,6 +155,10 @@ def main():
         shutil.rmtree(OUT)
     os.makedirs(OUT + "/venues")
     open(OUT + "/.nojekyll", "w").close()
+    sd = os.path.join(HERE, "static")
+    if os.path.isdir(sd):
+        for f in os.listdir(sd):
+            shutil.copy(os.path.join(sd, f), os.path.join(OUT, f))
     open(OUT + "/events.ics", "w", newline="").write(ics(evs))
     PSLUG = {"愛知": "aichi", "静岡": "shizuoka", "岐阜": "gifu", "三重": "mie"}
     prefs = [p for p in PSLUG if any(e["pref"] == p for e in evs)] + sorted({e["pref"] for e in evs} - set(PSLUG))
