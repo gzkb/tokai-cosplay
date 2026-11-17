@@ -156,15 +156,21 @@ def main():
     os.makedirs(OUT + "/venues")
     open(OUT + "/.nojekyll", "w").close()
     open(OUT + "/events.ics", "w", newline="").write(ics(evs))
-    prefs = sorted({e["pref"] for e in evs})
+    PSLUG = {"愛知": "aichi", "静岡": "shizuoka", "岐阜": "gifu", "三重": "mie"}
+    prefs = [p for p in PSLUG if any(e["pref"] == p for e in evs)] + sorted({e["pref"] for e in evs} - set(PSLUG))
+    icsmap = {"": "events.ics"}
+    for pf in prefs:
+        fn = f"events-{PSLUG.get(pf, hashlib.md5(pf.encode()).hexdigest()[:6])}.ics"
+        open(OUT + "/" + fn, "w", newline="").write(ics([e for e in evs if e["pref"] == pf]).replace("X-WR-CALNAME:東海コスプレイベント", f"X-WR-CALNAME:東海コスプレイベント（{pf}県）"))
+        icsmap[pf] = fn
     # --- index
     months = {}
     for e in evs:
         months.setdefault(e["date"][:7], []).append(e)
     body = f"""<h1>東海のコスプレイベント予定</h1>
 <p class="lead">愛知・静岡・岐阜・三重の東海4県で、これから開催されるコスプレイベントを日付順にまとめています（{data['asof']}時点／約3か月先まで）。岐阜・三重は一覧に載る数が少なめなので、見つけ次第追加します。</p>
-<p><a class="btn" href="events.ics">カレンダーに登録（.ics）</a></p>
-<p class="lead" style="font-size:.9rem">ダウンロードした .ics を、iPhoneのカレンダー・Googleカレンダーなどで開くと、一度にまとめて登録できます。</p>
+<p><a class="btn" id="ics" href="events.ics">全イベントをカレンダーに登録（.ics）</a></p>
+<p class="lead" style="font-size:.9rem">下の県ボタンで絞り込むと、その県のイベントだけの .ics をダウンロードできます。ダウンロードした .ics を、iPhoneのカレンダー・Googleカレンダーなどで開くと、一度にまとめて登録できます。</p>
 <div class="filter" id="f"><button class="on" data-p="">すべて</button>{''.join(f'<button data-p="{esc(p)}">{esc(p)}県</button>' for p in prefs)}</div>"""
     for m, items in months.items():
         y, mo = m.split("-")
@@ -179,10 +185,12 @@ def main():
 <li><span class="b mid">主催の告知で確認</span> 主催者のSNSなどで告知を確認したもの</li>
 <li><span class="b ng">公式で未確認</span> 一覧サイトにだけ載っていて、公式でまだ確認できていないもの</li></ul>
 <script>
-const bs=document.querySelectorAll('#f button');bs.forEach(b=>b.onclick=()=>{{bs.forEach(x=>x.classList.remove('on'));b.classList.add('on');const p=b.dataset.p;
+const ICS=__ICSMAP__;
+const bs=document.querySelectorAll('#f button');bs.forEach(b=>b.onclick=()=>{{bs.forEach(x=>x.classList.remove('on'));b.classList.add('on');const p=b.dataset.p;const a=document.getElementById('ics');a.href=ICS[p];a.textContent=p?(p+'県のイベントをカレンダーに登録（.ics）'):'全イベントをカレンダーに登録（.ics）';
 document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',p&&c.dataset.pref!==p));
 document.querySelectorAll('.mon').forEach(s=>s.classList.toggle('hide',![...s.querySelectorAll('.card')].some(c=>!c.classList.contains('hide'))));}});
 </script>"""
+    body = body.replace("__ICSMAP__", json.dumps(icsmap, ensure_ascii=False))
     open(OUT + "/index.html", "w").write(page(f"{SITE}｜愛知・静岡・岐阜・三重のイベント予定", body,
         "愛知・静岡・岐阜・三重など東海地方のコスプレイベントの予定を、日付順にまとめたカレンダーです。公式で確認できた情報かどうかも表示しています。", "index.html", base))
     # --- venues
