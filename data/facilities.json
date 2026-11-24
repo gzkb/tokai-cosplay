@@ -23,6 +23,26 @@
    "confidence": "公式で確認"
   },
   {
+   "id": "cruise-nagoya",
+   "name": "クルーズ名古屋",
+   "pref": "愛知",
+   "city": "名古屋市",
+   "type": "商業施設・テーマパーク",
+   "address": "",
+   "access": "金城ふ頭・ささしまライブなどの乗り場",
+   "hours": "運航日・時間は公式で確認（平日は休業）",
+   "parking": "なし",
+   "cosplay_rule": "名古屋市公認コスプレ施設。事前申込は不要（座席に限りがあるため予約がおすすめ）。更衣室なし（トイレでの更衣・メイク不可）。定員の範囲内。貸切は事前の調整が必要。",
+   "features": "中川運河や名古屋港を船から眺められるクルーズ。",
+   "official_url": "http://cruise-nagoya.jp/",
+   "source_urls": [
+    "https://cosplay-hosttown.nagoya/wp-content/uploads/2026/04/cruise_nagoya.pdf",
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
    "id": "photo-space-hisaya",
    "name": "photo space HISAYA",
    "pref": "愛知",
@@ -63,6 +83,26 @@
    "confidence": "一覧サイトのみ"
   },
   {
+   "id": "flarie",
+   "name": "久屋大通庭園フラリエ",
+   "pref": "愛知",
+   "city": "名古屋市中区",
+   "type": "公園・屋外",
+   "address": "名古屋市中区大須4丁目4-1",
+   "access": "地下鉄名城線「矢場町」駅4番出口から徒歩3分",
+   "hours": "9:00〜17:30",
+   "parking": "あり（普通車18台・有料）",
+   "cosplay_rule": "名古屋市公認コスプレ施設。個人の撮影は申請不要（有料撮影・大人数のイベントは要相談）。建物内での撮影は不可。更衣室なし（施設内・近隣のトイレでの更衣・メイク不可）。大人数での来園は不可。",
+   "features": "花や緑、水辺のあるガーデン。洋風・学園風・ファンタジー系の背景が撮れる。",
+   "official_url": "https://www.flarie.jp/",
+   "source_urls": [
+    "https://cosplay-hosttown.nagoya/wp-content/uploads/2026/04/flarie.pdf",
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
    "id": "nagoya-castle",
    "name": "名古屋城",
    "pref": "愛知",
@@ -98,6 +138,46 @@
    "source_urls": [
     "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html",
     "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/013/747/nakamura_park.pdf"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "nayabashi",
+   "name": "納屋橋周辺の広場・遊歩道",
+   "pref": "愛知",
+   "city": "名古屋市中村区",
+   "type": "公園・屋外",
+   "address": "名古屋市中村区名駅南",
+   "access": "地下鉄「伏見」駅から徒歩約8分",
+   "hours": "",
+   "parking": "なし",
+   "cosplay_rule": "名古屋市公認コスプレ施設。申込は不要。更衣室なし（トイレでの更衣・メイク不可）。複数グループ・団体は不可。橋の上は公道のため対象外。周辺店舗のテラス席を無断で使わない。イベント会場として使う場合は申請が必要。",
+   "features": "堀川沿いの親水広場と遊歩道。洋風の橋を背景にできる。",
+   "official_url": "https://www.city.nagoya.jp/kurashi/douro/1014806/1034765/1014846.html",
+   "source_urls": [
+    "https://cosplay-hosttown.nagoya/wp-content/uploads/2026/04/nayabashi.pdf",
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "tonarino",
+   "name": "tonarino（名城公園）",
+   "pref": "愛知",
+   "city": "名古屋市北区",
+   "type": "商業施設・テーマパーク",
+   "address": "名古屋市北区名城1丁目4-1",
+   "access": "地下鉄名城線「名城公園」駅4番出口すぐ",
+   "hours": "更衣室の利用は平日9〜17時まで（更衣完了時間）",
+   "parking": "あり（有料）",
+   "cosplay_rule": "名古屋市公認コスプレ施設。手続・申請は不要だが、施設への事前連絡が必要。更衣室あり（1回500円・8:30〜19:30）。複数グループ・団体利用は不可。武器等の小道具を持ったままテナント・共用部を利用しない、テナントのロゴ・店名が写らないように撮影すること。",
+   "features": "名城公園に隣接する、カフェやレストランが集まる洋風の施設。更衣室があるのが特徴。",
+   "official_url": "http://tonarino-park.jp/",
+   "source_urls": [
+    "https://cosplay-hosttown.nagoya/wp-content/uploads/2026/04/tonarino.pdf",
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html"
    ],
    "checked": "2026-11-24",
    "confidence": "公式で確認"
@@ -165,6 +245,46 @@
    "confidence": "一覧サイトのみ"
   },
   {
+   "id": "furukawa",
+   "name": "古川美術館／分館 爲三郎記念館",
+   "pref": "愛知",
+   "city": "名古屋市千種区",
+   "type": "商業施設・テーマパーク",
+   "address": "名古屋市千種区池下町2丁目50",
+   "access": "地下鉄東山線「池下」駅から徒歩約3分",
+   "hours": "10:00〜17:00（入館は16:30まで）。月曜休館ほか",
+   "parking": "あり",
+   "cosplay_rule": "名古屋市公認コスプレ施設。コスプレで利用する場合は事前の連絡が必要（個人の趣味の範囲）。入館料が必要。更衣室なし（ホールレンタル時は施設に相談）。複数グループ・団体は休館期間のホールレンタルを利用。",
+   "features": "美術館と、分館の記念館（邸宅）。和の建物と庭で撮影できる。",
+   "official_url": "http://www.furukawa-museum.or.jp/",
+   "source_urls": [
+    "https://cosplay-hosttown.nagoya/wp-content/uploads/2026/04/furukawa_museum.pdf",
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "yokiso",
+   "name": "揚輝荘",
+   "pref": "愛知",
+   "city": "名古屋市千種区",
+   "type": "商業施設・テーマパーク",
+   "address": "名古屋市千種区法王町2丁目5-17",
+   "access": "地下鉄東山線「覚王山」駅から徒歩約10分",
+   "hours": "9:30〜16:30。月曜休館ほか",
+   "parking": "なし",
+   "cosplay_rule": "名古屋市公認コスプレ施設。事前申込が必要。撮影使用料は不要。入館料が必要（北園は無料、聴松閣は有料）。更衣室なし（貸室利用時は施設に相談）。複数グループ・団体は要相談。コンセントの利用、植栽への立入りは不可。",
+   "features": "大正〜昭和初期の別邸。市指定文化財の建物と庭園で撮影できる。",
+   "official_url": "https://yokiso.com/",
+   "source_urls": [
+    "https://cosplay-hosttown.nagoya/wp-content/uploads/2026/04/yokiso.pdf",
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
    "id": "studio-asterisk",
    "name": "Studio Asterisk",
    "pref": "愛知",
@@ -181,6 +301,46 @@
     "https://studio-asterisk.com/",
     "https://studio-asterisk.com/access/",
     "https://cos-compass.com/studio/aichi/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "shidami",
+   "name": "歴史の里 しだみ古墳群",
+   "pref": "愛知",
+   "city": "名古屋市守山区",
+   "type": "公園・屋外",
+   "address": "名古屋市守山区大字上志段味字前山1367",
+   "access": "ゆとりーとライン「上志段味」駅から徒歩約7分",
+   "hours": "9:00〜17:00（展示室への最終入場16:30）。月曜休館（古墳エリアは休館日も利用可）",
+   "parking": "あり（無料。特定のイベント時のみ300円）",
+   "cosplay_rule": "名古屋市公認コスプレ施設。事前申込は不要（個人の趣味の範囲）。更衣室なし。露出は最小限（下着が見えないことが基準）、フルフェイス衣装での入場や、実在の公務員・警備員・軍装などの衣装は不可。",
+   "features": "古墳が点在する史跡公園。ミュージアムと古墳エリアで撮影できる。",
+   "official_url": "https://www.rekishinosato.city.nagoya.jp",
+   "source_urls": [
+    "https://cosplay-hosttown.nagoya/wp-content/uploads/2026/04/shidamikofungun.pdf",
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "koukaidou",
+   "name": "岡谷鋼機名古屋公会堂（名古屋市公会堂）",
+   "pref": "愛知",
+   "city": "名古屋市昭和区",
+   "type": "商業施設・テーマパーク",
+   "address": "名古屋市昭和区鶴舞1丁目1-3",
+   "access": "",
+   "hours": "コスプレイベント開催時間または施設利用時間に準ずる",
+   "parking": "あり（鶴舞公園駐車場・有料）",
+   "cosplay_rule": "コスプレイベント開催時、または施設利用時のみコスプレ可（名古屋市公認コスプレ施設）。通常日の自由な撮影は対象外。",
+   "features": "鶴舞公園内にある公会堂。acosta!などのイベントの会場として使われる。",
+   "official_url": "https://nagoyashi-kokaido.hall-info.jp/",
+   "source_urls": [
+    "https://cosplay-hosttown.nagoya/wp-content/uploads/2026/04/nagoyashi_koukaidou.pdf",
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html"
    ],
    "checked": "2026-11-24",
    "confidence": "公式で確認"
@@ -266,6 +426,106 @@
    "confidence": "公式で確認"
   },
   {
+   "id": "shumokukan",
+   "name": "文化のみち 橦木館",
+   "pref": "愛知",
+   "city": "名古屋市東区",
+   "type": "商業施設・テーマパーク",
+   "address": "名古屋市東区橦木町2丁目18",
+   "access": "地下鉄桜通線「高岳」駅から徒歩10分",
+   "hours": "イベント開催時間に準ずる。月曜休館ほか",
+   "parking": "なし",
+   "cosplay_rule": "コスプレイベント開催時のみコスプレ可（名古屋市公認コスプレ施設）。通常日の自由な撮影は対象外。イベント時はイベントのルールに従う。",
+   "features": "大正〜昭和初期の和館・洋館・庭園が残る市指定文化財の邸宅。",
+   "official_url": "https://shumokukan.jp/index.html",
+   "source_urls": [
+    "https://cosplay-hosttown.nagoya/wp-content/uploads/2026/04/shumokukan.pdf",
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "makers-pier",
+   "name": "Maker's Pier（メイカーズ ピア）",
+   "pref": "愛知",
+   "city": "名古屋市港区",
+   "type": "商業施設・テーマパーク",
+   "address": "名古屋市港区金城ふ頭2丁目7-1",
+   "access": "あおなみ線「金城ふ頭」駅から徒歩5分",
+   "hours": "施設内の営業時間まで",
+   "parking": "あり（名古屋市営金城ふ頭駐車場・有料）",
+   "cosplay_rule": "名古屋市公認コスプレ施設。事前申込は不要（個人の趣味の範囲）。更衣室なし。複数グループ・団体利用は不可。トイレなどでの更衣、ヘアスプレーの使用、ウィッグのカットは厳禁。走る・飛ぶ・振り回すなどの行為は不可。イベント時はイベントのルールに従う。",
+   "features": "「モノづくり」をテーマにした商業施設で、フォトスポットが多い。",
+   "official_url": "http://www.makerspier.com/",
+   "source_urls": [
+    "https://cosplay-hosttown.nagoya/wp-content/uploads/2026/04/makers_pier.pdf",
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "todagawa-kodomoland",
+   "name": "meitoこどもランド・とだがわ（とだがわこどもランド）",
+   "pref": "愛知",
+   "city": "名古屋市港区",
+   "type": "公園・屋外",
+   "address": "名古屋市港区春田野1丁目3616",
+   "access": "JR「春田」駅から市バス「戸田川緑地」下車すぐ（ほか公式に記載）",
+   "hours": "4〜9月 9:00〜18:00／10〜3月 9:00〜17:00。月曜休館",
+   "parking": "あり（無料）",
+   "cosplay_rule": "名古屋市公認コスプレ施設。事前連絡は不要だが、来場時は本館1階事務室に声をかける。子連れのコスプレイヤー向けの推奨施設で、大人（大学生・社会人）だけでの入場は不可（高校生は可）。更衣室なし。",
+   "features": "大型の木製遊具がある児童センター。子ども連れ向けの施設。",
+   "official_url": "https://www.todagawa.jp/",
+   "source_urls": [
+    "https://cosplay-hosttown.nagoya/wp-content/uploads/2026/04/todagawakodomoland.pdf",
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "portmesse",
+   "name": "ポートメッセなごや（名古屋市国際展示場）",
+   "pref": "愛知",
+   "city": "名古屋市港区",
+   "type": "商業施設・テーマパーク",
+   "address": "名古屋市港区金城ふ頭2丁目2番地",
+   "access": "",
+   "hours": "各イベントの開催時間に準ずる",
+   "parking": "",
+   "cosplay_rule": "コスプレイベント開催時のみコスプレ可（名古屋市公認コスプレ施設）。通常日の自由な撮影は対象外。",
+   "features": "大型の展示場。コスプレイベントの会場として使われる。",
+   "official_url": "https://portmesse.com/",
+   "source_urls": [
+    "https://cosplay-hosttown.nagoya/wp-content/uploads/2026/04/portmesse_nagoya.pdf",
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "railway-park",
+   "name": "リニア・鉄道館",
+   "pref": "愛知",
+   "city": "名古屋市港区",
+   "type": "商業施設・テーマパーク",
+   "address": "名古屋市港区金城ふ頭3-2-2",
+   "access": "あおなみ線「金城ふ頭」駅から徒歩約2分",
+   "hours": "10:00〜17:30（最終入館は閉館30分前）。火曜休館ほか",
+   "parking": "なし（名古屋市営金城ふ頭駐車場を利用）",
+   "cosplay_rule": "名古屋市公認コスプレ施設。事前申込は不要（個人の趣味の範囲）。入館料が必要。更衣室なし（トイレ等での更衣・メイク禁止）。映像展示の動画撮影、シンボル展示エリアでのフラッシュ撮影は禁止。",
+   "features": "新幹線から超電導リニアまで実物車両を展示する博物館。",
+   "official_url": "https://museum.jr-central.co.jp/",
+   "source_urls": [
+    "https://cosplay-hosttown.nagoya/wp-content/uploads/2026/04/railway_park.pdf",
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
    "id": "arakogawa-park",
    "name": "荒子川公園",
    "pref": "愛知",
@@ -281,6 +541,26 @@
    "source_urls": [
     "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html",
     "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/013/747/arakogawa_park.pdf"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "todagawa-ryokuchi",
+   "name": "農業文化園・戸田川緑地",
+   "pref": "愛知",
+   "city": "名古屋市港区",
+   "type": "公園・屋外",
+   "address": "名古屋市港区春田野2丁目3204",
+   "access": "JR「春田」駅から市バス「戸田川緑地」下車すぐ（ほか公式に記載）",
+   "hours": "公園内は自由（公園事務所 9:00〜16:30）",
+   "parking": "あり（無料1,101台。イベント開催時は有料）",
+   "cosplay_rule": "名古屋市公認コスプレ施設。来場前に事務所へ連絡が必要。更衣室なし。複数グループ・団体は不可。子どもの来場者が多いので露出に配慮すること。園内の施設は基本的に撮影可。",
+   "features": "農業文化園と、戸田川沿いの大きな緑地。",
+   "official_url": "http://bunkaen-todagawa.jp/",
+   "source_urls": [
+    "https://cosplay-hosttown.nagoya/wp-content/uploads/2026/04/todagawaryokuchi.pdf",
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html"
    ],
    "checked": "2026-11-24",
    "confidence": "公式で確認"
@@ -306,6 +586,26 @@
    ],
    "checked": "2026-11-24",
    "confidence": "一覧サイトのみ"
+  },
+  {
+   "id": "shonai",
+   "name": "庄内緑地",
+   "pref": "愛知",
+   "city": "名古屋市西区",
+   "type": "公園・屋外",
+   "address": "名古屋市西区山田町大字上小田井字敷地3527",
+   "access": "地下鉄鶴舞線「庄内緑地公園」駅2番出口から徒歩1分",
+   "hours": "9:00〜17:00（グリーンプラザ 9:00〜16:45／室内広場 9:00〜21:00）",
+   "parking": "あり",
+   "cosplay_rule": "名古屋市公認コスプレ施設。個人の撮影は申込不要（有料撮影・大人数のイベントは要相談）。更衣室あり（室内広場の利用料200円。トイレでの更衣・メイクは不可）。複数グループ・団体は要相談。",
+   "features": "庄内川沿いの広い総合公園。更衣室が使える。",
+   "official_url": "http://shonai-ryokuchi.jp/",
+   "source_urls": [
+    "https://cosplay-hosttown.nagoya/wp-content/uploads/2026/04/shonairyokuchi.pdf",
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
   },
   {
    "id": "denpark",
