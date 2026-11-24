@@ -1,0 +1,991 @@
+{
+ "asof": "2026-11-24",
+ "facilities": [
+  {
+   "id": "create-studio-arrows",
+   "name": "CreateStudioARROWS",
+   "pref": "愛知",
+   "city": "一宮市",
+   "type": "スタジオ",
+   "address": "〒491-0859 愛知県一宮市本町2丁目1-13 本町商店街アーケード内",
+   "access": "尾張一宮駅／名鉄一宮駅 東口から徒歩約8分",
+   "hours": "平日10:00〜17:00、休日9:30〜21:30",
+   "parking": "専用駐車場なし（近隣コインパーキング利用）",
+   "cosplay_rule": "コスプレイヤー専用の撮影スタジオ（公式の表記）。コスプレ以外のポートレート・商用利用は不可（一覧サイト記載）",
+   "features": "商店街アーケード内にあるレイヤー専用スタジオ。白ホリ・黒ホリのほか教室や和室などの作り込みセットがそろう。",
+   "official_url": "https://arrows.lyer.jp/",
+   "source_urls": [
+    "https://arrows.lyer.jp/",
+    "https://arrows.lyer.jp/access/",
+    "https://cos-compass.com/studio/aichi/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "photo-space-hisaya",
+   "name": "photo space HISAYA",
+   "pref": "愛知",
+   "city": "名古屋市中区",
+   "type": "レンタルスペース",
+   "address": "〒460-0002 愛知県名古屋市中区丸の内3丁目18番12号 ラフォーリア2A",
+   "access": "地下鉄桜通線「久屋大通駅」徒歩2分",
+   "hours": "24時間営業・年中無休",
+   "parking": "近隣にコインパーキングあり（一覧サイト記載）",
+   "cosplay_rule": "公式で確認",
+   "features": "和室を生かした貸切型の撮影スタジオ。久屋大通駅から近く、和装やコスプレのロケ向きの空間。",
+   "official_url": "https://photospace-hisaya.com/",
+   "source_urls": [
+    "https://photospace-hisaya.com/",
+    "https://cos-compass.com/studio/aichi/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "一覧サイトのみ"
+  },
+  {
+   "id": "studio-little-fairy-fushimi",
+   "name": "フォトスタジオ伏見 リトルフェアリー",
+   "pref": "愛知",
+   "city": "名古屋市中区",
+   "type": "スタジオ",
+   "address": "愛知県名古屋市中区錦1-13-19 ネオハイツ錦905",
+   "access": "地下鉄「伏見駅」徒歩4分",
+   "hours": "24時間",
+   "parking": "",
+   "cosplay_rule": "公式で確認",
+   "features": "お姫様風の白い部屋と、黒と金のシックな部屋の2室があり、1回の利用で雰囲気の違う撮影ができる。",
+   "official_url": "http://studio-littlefairy.com/",
+   "source_urls": [
+    "http://studio-littlefairy.com/",
+    "https://cos-compass.com/studio/aichi/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "一覧サイトのみ"
+  },
+  {
+   "id": "nagoya-castle",
+   "name": "名古屋城",
+   "pref": "愛知",
+   "city": "名古屋市中区",
+   "type": "公園・屋外",
+   "address": "〒460-0031 愛知県名古屋市中区本丸1-1",
+   "access": "地下鉄名城線「名古屋城駅」7番出口徒歩5分",
+   "hours": "使用可能時間 9:00〜16:30",
+   "parking": "あり（有料・普通車442台）",
+   "cosplay_rule": "名古屋市公認コスプレ施設。要事前申請（日時・衣装・機材を事前連絡）。建物内の入場・撮影不可、更衣・メイク不可、複数グループ・団体は不可、商用は許可制",
+   "features": "天守や石垣を背にした本格的な城郭ロケ。正門周辺など屋外の広い空間で、和風・戦国系の撮影に向く。",
+   "official_url": "https://www.nagoyajo.city.nagoya.jp",
+   "source_urls": [
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html",
+    "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/013/747/nagoyacastle.pdf"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "nakamura-park",
+   "name": "中村公園",
+   "pref": "愛知",
+   "city": "名古屋市中村区",
+   "type": "公園・屋外",
+   "address": "〒453-0053 愛知県名古屋市中村区中村町高畑68",
+   "access": "地下鉄東山線「中村公園駅」3番出口から徒歩約10分",
+   "hours": "公園内自由（公園事務所8:45〜17:30）",
+   "parking": "あり（予約専用・事務所へ連絡）",
+   "cosplay_rule": "名古屋市公認コスプレ施設。事前申込不要（有料撮影・大規模は要相談）。更衣室なし、トイレでの更衣・メイク不可。豊国神社・八幡社境内は撮影禁止。露出・フルフェイス・武器小道具等に規定あり",
+   "features": "池や茶室のある日本庭園で和風の撮影ができる。近くに豊臣秀吉ゆかりの史跡があり、和装キャラとの相性がよい。",
+   "official_url": "http://nakamura-park.com/index.html",
+   "source_urls": [
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html",
+    "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/013/747/nakamura_park.pdf"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "reve-nagoya",
+   "name": "コスプレスタジオ Reve",
+   "pref": "愛知",
+   "city": "名古屋市北区",
+   "type": "スタジオ",
+   "address": "〒462-0861 愛知県名古屋市北区辻本通1丁目12 米常第3ビル",
+   "access": "地下鉄名城線「志賀本通駅」3番出口徒歩8分／「黒川駅」4番出口徒歩15分",
+   "hours": "平日10:00〜17:00（完全予約制）、土日祝9:30〜21:30",
+   "parking": "あり（シェアプランは駐車場予約制）",
+   "cosplay_rule": "コスプレ（アニメ・ゲーム等のキャラクター衣装）撮影が対象。個人の趣味の範囲で、販売目的・宣材など商用利用は不可（貸切のみ別途相談）。女性更衣室あり",
+   "features": "複数フロアに白系ファンタジーや廃墟風など多彩なセットを備え、レイヤー向けに設計された名古屋の大型シェアスタジオ。",
+   "official_url": "https://reve-cos.com/",
+   "source_urls": [
+    "https://reve-cos.com/guid/",
+    "https://reve-cos.com/access/",
+    "https://reve-cos.com/floor/",
+    "https://cos-compass.com/studio/aichi/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "meijo-park",
+   "name": "名城公園",
+   "pref": "愛知",
+   "city": "名古屋市北区",
+   "type": "公園・屋外",
+   "address": "〒462-0846 愛知県名古屋市北区名城1丁目2-25",
+   "access": "地下鉄名城線「名城公園駅」4番出口すぐ",
+   "hours": "公園内自由",
+   "parking": "あり（有料）",
+   "cosplay_rule": "名古屋市公認コスプレ施設。事前申込不要（有料撮影・大人数は要相談）。更衣室なし、トイレでの更衣不可。有料野球場・ランニングコースは撮影禁止。電源利用不可",
+   "features": "名古屋城を望む広い公園で、芝生広場や藤の回廊、池などがあり、開放的な屋外ロケができる。",
+   "official_url": "http://www.meijyo-fp.com/",
+   "source_urls": [
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html",
+    "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/013/747/meijo_park.pdf"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "clear-studio-nagoya",
+   "name": "CLEAR STUDIO",
+   "pref": "愛知",
+   "city": "名古屋市千種区",
+   "type": "スタジオ",
+   "address": "",
+   "access": "地下鉄名城線「茶屋ヶ坂駅」徒歩2分",
+   "hours": "9:00〜21:00",
+   "parking": "あり（各スタジオ前に2台まで）",
+   "cosplay_rule": "公式で確認",
+   "features": "白ホリゾントが2面ある撮影専用設計のレンタルスタジオ。照明機材も借りられ、シンプルな背景撮影に向く。",
+   "official_url": "http://www.clear-st.com/",
+   "source_urls": [
+    "http://www.clear-st.com/",
+    "https://cos-compass.com/studio/aichi/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "一覧サイトのみ"
+  },
+  {
+   "id": "studio-asterisk",
+   "name": "Studio Asterisk",
+   "pref": "愛知",
+   "city": "名古屋市南区",
+   "type": "スタジオ",
+   "address": "愛知県名古屋市南区内田橋2丁目30-22 トヨダコーポ2F",
+   "access": "名鉄常滑線「豊田本町駅」徒歩3分／地下鉄名城線「伝馬町駅」徒歩15分",
+   "hours": "",
+   "parking": "あり（管理駐車場は有料・約300m、ほか近隣コインパーキング）",
+   "cosplay_rule": "コスプレイヤー向け撮影スタジオと明記。静止画・動画撮影可。貸切制",
+   "features": "白と黒の2種類のシンプルな部屋に小道具やLED照明を組み合わせ、自分好みの世界観を作り込める貸切スタジオ。",
+   "official_url": "https://studio-asterisk.com/",
+   "source_urls": [
+    "https://studio-asterisk.com/",
+    "https://studio-asterisk.com/access/",
+    "https://cos-compass.com/studio/aichi/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "tsurumai-park",
+   "name": "鶴舞公園",
+   "pref": "愛知",
+   "city": "名古屋市昭和区",
+   "type": "公園・屋外",
+   "address": "愛知県名古屋市昭和区鶴舞一丁目1番168号",
+   "access": "",
+   "hours": "",
+   "parking": "",
+   "cosplay_rule": "名古屋市公認コスプレ施設。公園管理者のページで『コスプレ撮影は申請が必要』。更衣室なし。露出の多い服装・顔が見えない被り物・模造刀等は不可、来園者への声かけ不可",
+   "features": "市街地にある名古屋市の公園。コスプレ撮影は公園管理者への申請が必要（詳細は公式で確認）。",
+   "official_url": "https://www.flowerpark.or.jp/news-column/photo/",
+   "source_urls": [
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html",
+    "https://www.flowerpark.or.jp/news-column/photo/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "photo-studio-opa",
+   "name": "Photo Studio Opa",
+   "pref": "愛知",
+   "city": "名古屋市東区",
+   "type": "スタジオ",
+   "address": "名古屋市東区芳野3丁目10-20 スターアーツビル4階",
+   "access": "名鉄瀬戸線「森下駅」徒歩5分",
+   "hours": "9:00〜23:00（受付12:00〜23:00）",
+   "parking": "専用駐車場なし（近隣コインパーキング）",
+   "cosplay_rule": "公式にコスプレ撮影（カメラマン撮影プラン）の記載あり。セルフ利用の条件は公式で確認",
+   "features": "世界観の異なる4タイプの部屋があり、セルフ撮影もプロカメラマン依頼もできる名古屋の多目的スタジオ。",
+   "official_url": "https://opa-studio.net/",
+   "source_urls": [
+    "https://opa-studio.net/",
+    "https://cos-compass.com/studio/aichi/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "chusanren-building",
+   "name": "中産連ビル",
+   "pref": "愛知",
+   "city": "名古屋市東区",
+   "type": "レンタルスペース",
+   "address": "愛知県名古屋市東区白壁三丁目12番13号 中産連ビル本館",
+   "access": "",
+   "hours": "9:00〜17:00（コスプレDAY開催時）",
+   "parking": "あり（新館1階に有料駐車場・一覧サイト記載）",
+   "cosplay_rule": "『渋ビルコスプレDAY』開催日（2026/12/20・2027/1/31）に撮影可。参加費あり・コスプレイヤーのみ。男女更衣室あり。コスプレでの来場や敷地内移動には注意事項あり。通常日は公式で確認",
+   "features": "モダニズム建築の古いビルで、指定の部屋・ロビー・階段・屋上を使って撮れる。レトロな雰囲気が持ち味。",
+   "official_url": "https://chusanrenbldg.co.jp/info/pg1678.html",
+   "source_urls": [
+    "https://chusanrenbldg.co.jp/info/pg1678.html",
+    "https://cos-compass.com/studio/aichi/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "nagoya-shiseishiryokan",
+   "name": "名古屋市市政資料館",
+   "pref": "愛知",
+   "city": "名古屋市東区",
+   "type": "レンタルスペース",
+   "address": "名古屋市東区白壁一丁目3番地",
+   "access": "地下鉄名城線「名古屋城駅」2番出口から徒歩8分／名鉄瀬戸線「東大手駅」徒歩5分",
+   "hours": "9:00〜12:00、13:00〜16:30（休館：月曜、第3木曜、12/29〜1/3）",
+   "parking": "あり（無料12台）",
+   "cosplay_rule": "名古屋市公認コスプレ施設。撮影主目的は要事前申込。更衣室なし。3階復原会議室は撮影不可、ラメ等が落ちる衣装不可、長い小道具不可",
+   "features": "赤レンガと白い石のネオ・バロック建築で、吹き抜けの階段室が見どころ。洋館・ヨーロッパ風の撮影に合う。",
+   "official_url": "https://www.city.nagoya.jp/kankou/rekishi/1004614/1004627/1004617.html",
+   "source_urls": [
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html",
+    "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/013/747/shiseisiryoukan.pdf"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "arakogawa-park",
+   "name": "荒子川公園",
+   "pref": "愛知",
+   "city": "名古屋市港区",
+   "type": "公園・屋外",
+   "address": "〒455-0055 愛知県名古屋市港区品川町2丁目1-1",
+   "access": "あおなみ線「荒子川公園駅」徒歩3分",
+   "hours": "公園内自由",
+   "parking": "あり（無料。ラベンダーフェア期間は有料）",
+   "cosplay_rule": "名古屋市公認コスプレ施設。事前申込不要（有料撮影・大人数は要相談）。更衣室なし、トイレでの更衣不可。三脚・一脚は使用禁止。露出・フルフェイス・銃器類に規定あり",
+   "features": "日本庭園やラベンダー園、桜並木があり、季節の花を背景にできる。和風・洋風・学園風と幅広く撮れる。",
+   "official_url": "http://arakogawapark.jp",
+   "source_urls": [
+    "https://www.city.nagoya.jp/kankou/kankouinfo/1013741/1013747.html",
+    "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/013/747/arakogawa_park.pdf"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "studio-dolly-nagoya",
+   "name": "スタジオDOLLY名古屋店",
+   "pref": "愛知",
+   "city": "名古屋市西区",
+   "type": "スタジオ",
+   "address": "愛知県名古屋市西区名駅2丁目29-28",
+   "access": "地下鉄東山線「名古屋駅」徒歩5分／桜通線「国際センター駅」徒歩12分／東山線「亀島駅」徒歩10分",
+   "hours": "24時間営業",
+   "parking": "",
+   "cosplay_rule": "公式で確認",
+   "features": "名古屋駅近くの8階角部屋で、自然光が入る18㎡のスタジオ。ブルーグレーの壁とクラシック家具で上品な雰囲気。",
+   "official_url": "https://studio-dolly.com/studio/nagoya/",
+   "source_urls": [
+    "https://studio-dolly.com/studio/nagoya/",
+    "https://www.instabase.jp/space/8571739586",
+    "https://www.spacemarket.com/spaces/bddidwahf_qy96ht/",
+    "https://cos-compass.com/studio/aichi/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "一覧サイトのみ"
+  },
+  {
+   "id": "denpark",
+   "name": "デンパーク（安城産業文化公園）",
+   "pref": "愛知",
+   "city": "安城市",
+   "type": "公園・屋外",
+   "address": "",
+   "access": "",
+   "hours": "",
+   "parking": "",
+   "cosplay_rule": "個人的な撮影（コスプレ含む）は許可不要、注意事項を守ること。トイレ個室での着替え・洗面台でのメイク禁止（着替えはクラブハウスの更衣ロッカールーム利用）。模造刀・武器小道具の持込禁止、血のり不可、長時間の場所占有不可",
+   "features": "安城市の花の公園。個人の撮影は許可不要で、注意事項の遵守が求められます。",
+   "official_url": "https://denpark.jp/",
+   "source_urls": [
+    "https://denpark.jp/faq.php",
+    "https://denpark.jp/denpark_satuei.pdf"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "lagunasia",
+   "name": "ラグナシア（ラグーナテンボス）",
+   "pref": "愛知",
+   "city": "蒲郡市",
+   "type": "商業施設・テーマパーク",
+   "address": "愛知県蒲郡市海陽町2-3",
+   "access": "",
+   "hours": "",
+   "parking": "",
+   "cosplay_rule": "園内でのコスプレ・仮装撮影に公式ルールあり。長物は1m程度まで、武器・鎧・先端の尖った衣装・露出の多い衣装・特殊メイク・着ぐるみ等は不可。商用撮影は事前許可。ショップ・アトラクション内の撮影不可",
+   "features": "蒲郡市の遊園地。園内のコスプレ・仮装撮影に公式ルールがあります（持ち物・衣装の制限あり）。",
+   "official_url": "https://www.lagunatenbosch.co.jp/lagunasia/guest/rules/index.html",
+   "source_urls": [
+    "https://www.lagunatenbosch.co.jp/lagunasia/guest/rules/index.html",
+    "https://worldcosplaysummit.jp/lagucos/2026/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "moricoro-park",
+   "name": "愛・地球博記念公園（モリコロパーク）",
+   "pref": "愛知",
+   "city": "長久手市",
+   "type": "公園・屋外",
+   "address": "",
+   "access": "",
+   "hours": "",
+   "parking": "",
+   "cosplay_rule": "コスプレ撮影について公式ページに記載あり。企画・イベントとしてのコスプレは注意事項を読み、申込書を管理事務所へ提出。商業目的の撮影は県への行為許可申請（2週間前まで）が必要",
+   "features": "愛知県の大型公園。コスプレ撮影について公式ページに注意事項があります（内容は公式で確認）。",
+   "official_url": "https://www.aichi-koen.com/moricoro/media/",
+   "source_urls": [
+    "https://www.aichi-koen.com/moricoro/media/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "with-a-tree-shimoda",
+   "name": "大型自由スペース WITH A TREE",
+   "pref": "静岡",
+   "city": "下田市",
+   "type": "スタジオ",
+   "address": "静岡県下田市西本郷2-5-30",
+   "access": "伊豆急下田駅から徒歩6分",
+   "hours": "8:00〜21:00",
+   "parking": "あり",
+   "cosplay_rule": "公式で確認（一覧サイトでは水・血糊などの特殊撮影可と紹介。公式は撮影・ロケ利用可と記載）",
+   "features": "倉庫を改装した広い貸切空間で、大きな音を出す撮影もできる。特殊撮影に対応するため、凝った演出をしたい合わせ撮影向き。",
+   "official_url": "https://withatree.my.canva.site/our-service",
+   "source_urls": [
+    "https://withatree.my.canva.site/our-service",
+    "https://cos-compass.com/studio/shizuoka/area_27/shop_814/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "一覧サイトのみ"
+  },
+  {
+   "id": "nijinosato-shuzenji",
+   "name": "修善寺 虹の郷",
+   "pref": "静岡",
+   "city": "伊豆市",
+   "type": "公園・屋外",
+   "address": "静岡県伊豆市修善寺4279-3",
+   "access": "修善寺駅南口から東海バス虹の郷行きで約20分",
+   "hours": "10:00〜16:00（2026年10月〜2027年2月の公式告知。季節で変動）",
+   "parking": "あり（一覧サイト記載）",
+   "cosplay_rule": "コスプレ可。専用更衣室はイギリス村、更衣は更衣室のみ。きぐるみ・お面、血糊、過度の露出、車輪付き持込は禁止。武器は撮影時のみ使用可。ショップ・ミュージアム内や鉄道車内の撮影不可",
+   "features": "英国風の村や日本庭園、花の庭が一つの園内にまとまり、洋風・和風どちらの衣装にも合わせやすい。",
+   "official_url": "https://www.nijinosato.com/",
+   "source_urls": [
+    "https://www.nijinosato.com/cosplay/",
+    "https://www.nijinosato.com/",
+    "https://cos-compass.com/studio/shizuoka/area_27/shop_337/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "greige-house-studio-kic",
+   "name": "Greige House Studio by KIC",
+   "pref": "静岡",
+   "city": "函南町",
+   "type": "スタジオ",
+   "address": "静岡県田方郡函南町平井1730-812 南箱根ダイヤランド63-188",
+   "access": "熱海駅からタクシー（公式記載）",
+   "hours": "公式で確認（電話受付10:00〜12:00/13:00〜18:00、土日祝休）",
+   "parking": "あり（普通車10台程度・ロケバス可）",
+   "cosplay_rule": "公式で確認（公式の記載は撮影全般。日没後のストロボ不可。コスプレ可否は一覧サイトで紹介）",
+   "features": "南箱根の別荘地にある平屋の一棟貸し。高い天井と自然光、庭やテラスもあり、屋内外で撮り分けしやすい。",
+   "official_url": "https://kic-studio.com/",
+   "source_urls": [
+    "https://kic-studio.com/",
+    "https://cos-compass.com/studio/shizuoka/area_27/shop_988/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "一覧サイトのみ"
+  },
+  {
+   "id": "image-pool-solana-oyama",
+   "name": "Image Pool SOLANA（ソラナスタジオ）",
+   "pref": "静岡",
+   "city": "小山町",
+   "type": "スタジオ",
+   "address": "静岡県駿東郡小山町須走495-250",
+   "access": "都心から東名高速で約75分（一覧サイト記載）",
+   "hours": "",
+   "parking": "あり（一覧サイト記載）",
+   "cosplay_rule": "公式で確認（コスナビがソラナスタジオでのシェア撮影イベントを開催）",
+   "features": "御殿場エリアの4階建て南欧風ハウススタジオ。屋内に加え屋外セットもあり、自然を背にした撮影ができる。",
+   "official_url": "https://x.com/ImagePoolSOLANA",
+   "source_urls": [
+    "https://x.com/ImagePoolSOLANA",
+    "https://cosnavi.biz/mtssb_article/solana-share/",
+    "https://cos-compass.com/studio/shizuoka/area_27/shop_338/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "一覧サイトのみ"
+  },
+  {
+   "id": "non-art-maisaka",
+   "name": "Non-Art（ノンアート）",
+   "pref": "静岡",
+   "city": "浜松市",
+   "type": "スタジオ",
+   "address": "静岡県浜松市西区舞阪町舞阪1051",
+   "access": "舞阪駅南口から徒歩2分（一覧サイト記載）",
+   "hours": "10:00〜18:00（一覧サイト記載）",
+   "parking": "あり（一覧サイト記載）",
+   "cosplay_rule": "個人のコスプレ・ポートレート撮影向け。1対多の撮影会・商用撮影は禁止（一覧サイト掲載の利用規約）",
+   "features": "駅近で、洋風から和風まで多数の撮影ブースが並ぶ作り込み型スタジオ。世界観の違う背景を短時間で何パターンも撮れる。",
+   "official_url": "http://studio.non-art.jp/",
+   "source_urls": [
+    "http://studio.non-art.jp/",
+    "https://cos-compass.com/studio/shizuoka/area_27/shop_334/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "一覧サイトのみ"
+  },
+  {
+   "id": "hamamatsu-flower-park",
+   "name": "はままつフラワーパーク",
+   "pref": "静岡",
+   "city": "浜松市",
+   "type": "公園・屋外",
+   "address": "",
+   "access": "",
+   "hours": "11/21〜11/30は9:00〜20:00、12/1〜12/28は10:00〜20:00（公式。季節で変動）",
+   "parking": "",
+   "cosplay_rule": "コスプレ撮影は申請が必要（7日前まで）。3〜6月はコスプレ撮影禁止（公式PDF）。控え室は有料。模造刀・銃は撮影時以外は包む。顔が隠れる被り物は不可",
+   "features": "花壇や温室が広がる植物園で、季節ごとの花を背景にできる。申請と時期の制限に注意。",
+   "official_url": "https://e-flowerpark.com/",
+   "source_urls": [
+    "https://www.flowerpark.or.jp/news-column/photo/",
+    "https://e-flowerpark.com/guide/qa/photo-shootnn.pdf",
+    "https://www.hamamatsu-film.com/nakatajima-cosplayer.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "hamamatsu-fruit-park",
+   "name": "はままつフルーツパーク時之栖",
+   "pref": "静岡",
+   "city": "浜松市",
+   "type": "公園・屋外",
+   "address": "",
+   "access": "天竜浜名湖鉄道フルーツパーク駅から徒歩約8分",
+   "hours": "9:00〜17:00（営業時間変動あり）",
+   "parking": "あり（800台・無料）",
+   "cosplay_rule": "浜松フィルムコミッションがコスプレ撮影の受入可能施設として案内。申請・料金の有無は施設に確認",
+   "features": "果樹園とフルーツ関連施設のある観光公園。明るい屋外で撮れ、季節でイルミネーションも楽しめる。",
+   "official_url": "https://hamamatsu-fp.co.jp/",
+   "source_urls": [
+    "https://hamamatsu-fp.co.jp/guide/",
+    "https://www.hamamatsu-film.com/nakatajima-cosplayer.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "act-city-hamamatsu",
+   "name": "アクトシティ浜松",
+   "pref": "静岡",
+   "city": "浜松市",
+   "type": "商業施設・テーマパーク",
+   "address": "",
+   "access": "",
+   "hours": "",
+   "parking": "",
+   "cosplay_rule": "浜松フィルムコミッションがコスプレ撮影の受入可能施設として案内。事前申請が必要で、詳細は施設に確認",
+   "features": "駅近の大型複合施設で、建物や展示物を背景にした撮影ができる。事前申請が前提。",
+   "official_url": "https://www.actcity.jp/",
+   "source_urls": [
+    "https://www.actcity.jp/faq/",
+    "https://www.hamamatsu-film.com/nakatajima-cosplayer.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "nakatajima-sand-dune",
+   "name": "中田島砂丘",
+   "pref": "静岡",
+   "city": "浜松市",
+   "type": "公園・屋外",
+   "address": "",
+   "access": "風車公園（浜松市中央区中田島町1674）の無料駐車場を利用",
+   "hours": "",
+   "parking": "あり（風車公園の無料駐車場）",
+   "cosplay_rule": "コスプレ撮影は原則1週間前までに浜松フィルムコミッションへ企画書提出が必要。車両乗り入れ・穴掘り・火気・海に入る撮影は禁止、場所の占有不可",
+   "features": "広い砂丘と空しか視界に入らない開けた場所。ファンタジーや荒野系の世界観を撮りやすい。",
+   "official_url": "https://www.hamamatsu-film.com/nakatajima.html",
+   "source_urls": [
+    "https://www.hamamatsu-film.com/nakatajima-cosplayer.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "studio-halo-hamamatsu",
+   "name": "写真スタジオ Halo",
+   "pref": "静岡",
+   "city": "浜松市",
+   "type": "レンタルスペース",
+   "address": "静岡県浜松市東区植松町75-1",
+   "access": "浜松駅から車10分（一覧サイト記載）",
+   "hours": "10:00〜20:00（一覧サイト記載）",
+   "parking": "あり（一覧サイト記載）",
+   "cosplay_rule": "公式で確認",
+   "features": "インスタベースで予約する浜松市東区の写真スタジオ。詳細設備は予約ページで確認する形。",
+   "official_url": "https://www.instabase.jp/space/8698784945",
+   "source_urls": [
+    "https://www.instabase.jp/space/8698784945",
+    "https://cos-compass.com/studio/shizuoka/area_27/shop_340/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "一覧サイトのみ"
+  },
+  {
+   "id": "hamanako-garden-park",
+   "name": "浜名湖ガーデンパーク",
+   "pref": "静岡",
+   "city": "浜松市",
+   "type": "公園・屋外",
+   "address": "",
+   "access": "",
+   "hours": "",
+   "parking": "",
+   "cosplay_rule": "営利でない少人数の個人撮影は申請不要。過度の露出・本物に見える武器は不可、花壇立入や通行妨害も不可。更衣は体験学習館研修室を有料で利用可（トイレでの更衣は不可）",
+   "features": "広い公園で、花の園地や芝生を背景に撮れる。個人撮影は申請不要で気軽に行ける。",
+   "official_url": "https://www.hamanako-gardenpark.jp/",
+   "source_urls": [
+    "https://www.hamanako-gardenpark.jp/news/2022/04/post-461.php",
+    "https://www.hamamatsu-film.com/nakatajima-cosplayer.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "hamanako-palpal",
+   "name": "浜名湖パルパル",
+   "pref": "静岡",
+   "city": "浜松市",
+   "type": "商業施設・テーマパーク",
+   "address": "静岡県浜松市中央区舘山寺町1891",
+   "access": "",
+   "hours": "",
+   "parking": "",
+   "cosplay_rule": "公式で確認（コスプレフロンティア開催時は園内・かんざんじロープウェイ・大草山展望台等でコスプレ可、参加登録が必要。通常日は公式で確認）",
+   "features": "遊園地に湖と山の景色が重なる。ロープウェイと展望台まで含め、乗り物と眺望の両方で撮れる。",
+   "official_url": "https://pal2.co.jp/",
+   "source_urls": [
+    "https://pal2.co.jp/events/cosplay",
+    "https://www.cosfro.com/cosfro_palpal/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "hamamatsu-castle-park",
+   "name": "浜松城公園",
+   "pref": "静岡",
+   "city": "浜松市",
+   "type": "公園・屋外",
+   "address": "静岡県浜松市中央区元城町100-2",
+   "access": "",
+   "hours": "",
+   "parking": "",
+   "cosplay_rule": "浜松フィルムコミッションがコスプレ撮影の受入可能施設として案内。条件は公式で確認",
+   "features": "天守と石垣、日本庭園がある城址公園。和風・戦国系の衣装と相性が良い。",
+   "official_url": "https://www.entetsuassist-dms.com/hamamatsu-jyo/",
+   "source_urls": [
+    "https://www.city.hamamatsu.shizuoka.jp/maps/c-castle_pk.html",
+    "https://www.hamamatsu-film.com/nakatajima-cosplayer.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "non-town-shimizu",
+   "name": "Non-Town（ノンタウン）",
+   "pref": "静岡",
+   "city": "静岡市",
+   "type": "スタジオ",
+   "address": "静岡県静岡市清水区真砂町4-3",
+   "access": "JR清水駅西口から徒歩3分",
+   "hours": "",
+   "parking": "なし（近隣の有料駐車場を利用）",
+   "cosplay_rule": "公式で確認",
+   "features": "清水駅前の商店街アーケード内にある多階建てスタジオ。雨の日も行きやすく、三脚やスモークマシンの貸出がある。",
+   "official_url": "http://town.non-art.jp/",
+   "source_urls": [
+    "http://town.non-art.jp/",
+    "https://cos-compass.com/studio/shizuoka/area_27/shop_333/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "一覧サイトのみ"
+  },
+  {
+   "id": "re-flower-shizuoka",
+   "name": "re-flower（リフラワー）",
+   "pref": "静岡",
+   "city": "静岡市",
+   "type": "スタジオ",
+   "address": "静岡県静岡市葵区鷹匠3丁目1-5",
+   "access": "新静岡駅（セノバ）から徒歩8分（一覧サイト記載）",
+   "hours": "9:00〜16:30（一覧サイト記載）",
+   "parking": "近隣にコインパーキングあり（一覧サイト記載）",
+   "cosplay_rule": "公式で確認（一覧サイトでは1枠70分で持ち込み衣装・小物の撮影可と紹介）",
+   "features": "花屋の3〜4階を使うセミセルフの写真館。生花やドライフラワーの背景と螺旋階段があり、華やかな衣装を撮りやすい。",
+   "official_url": "https://coubic.com/reflower/770081",
+   "source_urls": [
+    "https://coubic.com/reflower/770081",
+    "https://cos-compass.com/studio/shizuoka/area_27/shop_773/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "一覧サイトのみ"
+  },
+  {
+   "id": "shimizu-port-marine-terminal",
+   "name": "清水港（清水マリンターミナル）",
+   "pref": "静岡",
+   "city": "静岡市",
+   "type": "公園・屋外",
+   "address": "静岡県静岡市清水区日の出町10-80",
+   "access": "",
+   "hours": "",
+   "parking": "",
+   "cosplay_rule": "主催者コスナビのイベント開催時、エスパルスドリームプラザ内の遊園地・埠頭等で撮影可（エリアごとにルール、ドリームプラザ内はストロボ禁止）。通常日は公式で確認",
+   "features": "港と観覧車、埠頭の夜景が一度に撮れる。年に数回のイベント日に絞って使える。",
+   "official_url": "https://cosnavi.biz/mtssb_article/shimizukou-de-cosplay/",
+   "source_urls": [
+    "https://cosnavi.biz/mtssb_article/shimizukou-de-cosplay/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "一覧サイトのみ"
+  },
+  {
+   "id": "ogaki-city-parks",
+   "name": "大垣市の都市公園（公園での撮影ルール）",
+   "pref": "岐阜",
+   "city": "大垣市",
+   "type": "公園・屋外",
+   "address": "",
+   "access": "",
+   "hours": "平日8:30〜17:15に公園みどり課へ連絡",
+   "parking": "",
+   "cosplay_rule": "個人・友人間のコスプレ撮影は許可不要。ただし事前に電話/メールで日時・場所・人数の連絡が必要で、内容により断られる場合あり。モデル撮影会・動画撮影等は申請必要（原則土日祝不可）",
+   "features": "市内の都市公園で個人のコスプレ撮影を受け付ける制度。事前連絡が条件で、特定の公園名は公式で確認。",
+   "official_url": "https://www.city.ogaki.lg.jp/0000062670.html",
+   "source_urls": [
+    "https://www.city.ogaki.lg.jp/0000062670.html",
+    "https://www.city.ogaki.lg.jp/0000068918.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "studio-laugh",
+   "name": "レンタルスタジオLAUGH（ラフ）",
+   "pref": "岐阜",
+   "city": "岐阜市",
+   "type": "スタジオ",
+   "address": "岐阜県岐阜市福光西1-14-16 TSレジデンスⅡ 102号",
+   "access": "JR岐阜駅 バス15分",
+   "hours": "",
+   "parking": "あり",
+   "cosplay_rule": "公式で確認（掲載ページにコスプレ可否の明記なし。禁止: 飲酒・喫煙・騒音・強い匂いの物・壁床へ粘着テープ等）",
+   "features": "自然光が入る57㎡ほどの部屋に6種の背景がそろい、1室で複数カットを撮り分けやすい。",
+   "official_url": "https://www.spacemarket.com/spaces/laugh/",
+   "source_urls": [
+    "https://www.spacemarket.com/spaces/laugh/",
+    "https://cos-compass.com/studio/gifu/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "一覧サイトのみ"
+  },
+  {
+   "id": "rensuta",
+   "name": "中華スタジオ 蓮スタ",
+   "pref": "岐阜",
+   "city": "岐阜市",
+   "type": "スタジオ",
+   "address": "岐阜県岐阜市日光町6-25",
+   "access": "名古屋駅から電車とバスで約50分",
+   "hours": "",
+   "parking": "",
+   "cosplay_rule": "コスプレ撮影向けレンタルスタジオ。ポートレート・ドール・木偶・推し活撮影も可。貸切・シェア利用可。エアコンのないブースがある",
+   "features": "中華ファンタジーやアラビアンなど世界観の違うブースが並ぶ、中華系に強いコスプレ向けスタジオ。",
+   "official_url": "https://rens.sakura.ne.jp/rensuta.html",
+   "source_urls": [
+    "https://rens.sakura.ne.jp/rensuta.html",
+    "https://cos-compass.com/studio/gifu/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "gifu-bldg",
+   "name": "岐阜ビル",
+   "pref": "岐阜",
+   "city": "岐阜市",
+   "type": "レンタルスペース",
+   "address": "岐阜県岐阜市若宮町6-2",
+   "access": "",
+   "hours": "",
+   "parking": "",
+   "cosplay_rule": "公式で確認（公式トップは撮影スタジオ利用可と記載。コスプレ可否の明記は未確認）",
+   "features": "柳ヶ瀬そばのリノベビル。2階の白基調スタジオに撮影機材が常備され、シンプルな背景の撮影向き。",
+   "official_url": "https://www.gifu-bldg.com/",
+   "source_urls": [
+    "https://www.gifu-bldg.com/",
+    "https://cos-compass.com/studio/gifu/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "一覧サイトのみ"
+  },
+  {
+   "id": "happyie-space-godo",
+   "name": "Happyieスペース神戸",
+   "pref": "岐阜",
+   "city": "神戸町",
+   "type": "レンタルスペース",
+   "address": "岐阜県安八郡神戸町丈六道47",
+   "access": "養老鉄道養老線 広神戸駅 徒歩13分",
+   "hours": "",
+   "parking": "あり（庭に1台分）",
+   "cosplay_rule": "公式で確認（掲載ページ上は廃墟系古民家のコスプレ・ポートレート撮影向け。電気は使用不可との記載あり）",
+   "features": "古民家を丸ごと貸し切れる廃墟風スペース。荒れた和風の雰囲気で暗め・退廃系の作品に合う。",
+   "official_url": "https://www.spacemarket.com/spaces/ujiylelwvawnwnin/",
+   "source_urls": [
+    "https://www.spacemarket.com/spaces/ujiylelwvawnwnin/",
+    "https://cos-compass.com/studio/gifu/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "一覧サイトのみ"
+  },
+  {
+   "id": "kasamatsu-keibajo",
+   "name": "笠松競馬場（仮装の宴）",
+   "pref": "岐阜",
+   "city": "笠松町",
+   "type": "公園・屋外",
+   "address": "岐阜県羽島郡笠松町若葉町12番地",
+   "access": "",
+   "hours": "",
+   "parking": "",
+   "cosplay_rule": "常時は不可・公式の受け入れはイベント限定。町主催「仮装の宴2027」で仮装de撮影会あり（2027/1/24、事前申込制・撮影者は有料）。通常日のコスプレ可否は公式で確認",
+   "features": "実際のコースやゴール板前など、普段は入れない場所で撮れる年1回のイベント型ロケーション。",
+   "official_url": "https://www.town.kasamatsu.gifu.jp/docs/2021121700011/",
+   "source_urls": [
+    "https://www.town.kasamatsu.gifu.jp/docs/2021121700011/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "studio-tamaboshi",
+   "name": "studioたまぼし",
+   "pref": "岐阜",
+   "city": "美濃市",
+   "type": "スタジオ",
+   "address": "岐阜県美濃市常盤町2274番地",
+   "access": "東海環状自動車道 美濃ICから車で5分",
+   "hours": "",
+   "parking": "徒歩約3分の場所に大型の有料駐車場あり",
+   "cosplay_rule": "公式で確認（公式サイトにコスプレ可否の明記なし。町並みでの撮影可の記載は掲載サイト側）",
+   "features": "うだつの町並みにある築350年の邸宅スタジオ。和室・洋間・白ホリを一か所で使い分けられる。",
+   "official_url": "https://tamaboshi.jp/",
+   "source_urls": [
+    "https://tamaboshi.jp/",
+    "https://www.spacemarket.com/spaces/yt6hmb7xjnhsirax/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "一覧サイトのみ"
+  },
+  {
+   "id": "gifu-studio",
+   "name": "岐阜スタジオ",
+   "pref": "岐阜",
+   "city": "羽島市",
+   "type": "スタジオ",
+   "address": "岐阜県羽島市小熊町島4丁目115-2",
+   "access": "",
+   "hours": "10:00〜19:00（定休日: 不定休）",
+   "parking": "あり",
+   "cosplay_rule": "公式でコスプレ撮影を利用目的として明記。詳細条件は公式で確認",
+   "features": "プロカメラマンが立ち上げた羽島のスタジオ。ホワイト・和室・ブラックなど複数ルームで作風を変えられる。",
+   "official_url": "https://www.gifustudio.net/",
+   "source_urls": [
+    "https://www.gifustudio.net/",
+    "https://cos-compass.com/studio/gifu/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "bokka-no-sato",
+   "name": "ひるがの高原 牧歌の里",
+   "pref": "岐阜",
+   "city": "郡上市",
+   "type": "商業施設・テーマパーク",
+   "address": "岐阜県郡上市高鷲町鷲見2756-2",
+   "access": "",
+   "hours": "ウインターシーズン(2026/12/19〜2027/3/31) 10:00〜15:30、火曜休（祝日は営業）",
+   "parking": "",
+   "cosplay_rule": "園内でコスプレ撮影可。禁止: 露出過多、実在制服・軍服、ウェディングドレス等、血糊、トイレでの着替え。着ぐるみ・レプリカ武器は事前申請。雪撮の一部エリアは有料・要予約",
+   "features": "雪原や教会を背景にした雪撮ができる高原の牧場。動物もいるため、フラッシュ撮影などに制限がある。",
+   "official_url": "https://www.bokka.co.jp/usage_cosplayers.php",
+   "source_urls": [
+    "https://www.bokka.co.jp/usage_cosplayers.php",
+    "https://www.bokka.co.jp/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "omaenchi",
+   "name": "コスプレ撮影スタジオおまえんち",
+   "pref": "岐阜",
+   "city": "関ケ原町",
+   "type": "スタジオ",
+   "address": "",
+   "access": "JR東海道本線 関ケ原駅から徒歩約3分（260m）",
+   "hours": "",
+   "parking": "あり（スタジオから徒歩約3分）",
+   "cosplay_rule": "コスプレ・ドール撮影向けの撮影スポット。貸切で独占利用可。詳細条件は公式で確認",
+   "features": "関ケ原駅近くで、屋外・室内・庭を使えるプライベート寄りの撮影スポット。貸切もできる。",
+   "official_url": "https://omaenchi.jimdofree.com/",
+   "source_urls": [
+    "https://omaenchi.jimdofree.com/",
+    "https://cos-compass.com/studio/gifu/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "gozaisho-ropeway",
+   "name": "御在所ロープウエイ",
+   "pref": "三重",
+   "city": "三重郡菰野町",
+   "type": "公園・屋外",
+   "address": "〒510-1233 三重県三重郡菰野町湯の山温泉",
+   "access": "",
+   "hours": "",
+   "parking": "",
+   "cosplay_rule": "公式のコスプレ参加規約に基づき撮影可。撮影は所定のコスプレ撮影可能場所のみ。着ぐるみ、水着、実在の軍装・警察官等、過度な露出、血糊、カラースプレーは禁止。顔を覆うマスク類は撮影時のみ可。トイレ・更衣室・店舗内での撮影不可。持込みは長さ150cm×幅50cmまで。ライブ配信・ドローン撮影は不可。",
+   "features": "標高の高い山上公園で、山頂の景色や散策路、ロープウェイのゴンドラ周辺を背景にできる。自然や空を生かした撮影向き。",
+   "official_url": "https://www.gozaisho.co.jp/",
+   "source_urls": [
+    "https://www.gozaisho.co.jp/wordpress/wp-content/uploads/2022/02/3e1248706803ac9e999b771af58fdd88.pdf",
+    "https://www.gozaisho.co.jp/news/gozaisho_ropeway/",
+    "https://www.gozaisho.co.jp/access/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "ishigakiya-seki",
+   "name": "三重の古民家ゲストハウス 旅人宿石垣屋",
+   "pref": "三重",
+   "city": "亀山市",
+   "type": "レンタルスペース",
+   "address": "三重県亀山市関町中町445",
+   "access": "JR関西本線 関駅から徒歩7分（スペースマーケット記載）",
+   "hours": "",
+   "parking": "あり（無料・じゃらん記載）",
+   "cosplay_rule": "スペースマーケットの掲載でコスプレ撮影に対応。過激な服装でなければ関宿の街道での撮影も可で、事前連絡が必要（市・観光協会へ周知）。詳細は公式で確認。",
+   "features": "東海道の宿場町・関宿にある築130年の古民家。苔庭や土間、茶室、レトロなワーゲンバスがあり、和風や時代物の撮影に向く。",
+   "official_url": "",
+   "source_urls": [
+    "https://www.spacemarket.com/spaces/6jx6w0-0kazruytg/",
+    "https://www.jalan.net/yad315287/"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "一覧サイトのみ"
+  },
+  {
+   "id": "irodori-hime-room",
+   "name": "イロドリヒメルーム",
+   "pref": "三重",
+   "city": "四日市市",
+   "type": "レンタルスペース",
+   "address": "",
+   "access": "近鉄四日市駅から徒歩13分（インスタベース記載）",
+   "hours": "",
+   "parking": "無料駐車場あり（要申請・インスタベース記載）",
+   "cosplay_rule": "インスタベースの掲載文でコスプレ撮影・撮影会に対応と記載。土足厳禁。大音量や激しい動きは不可。詳細条件は公式で確認。",
+   "features": "パステル調のメルヘンな姫系インテリアの個室。ドレッサーやソファ、造花の装飾があり、ロリータや姫系の撮影に合う。",
+   "official_url": "",
+   "source_urls": [
+    "https://www.instabase.jp/space/3223027954",
+    "https://www.instabase.jp/mie-w24202/list/cosplay-shooting"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "一覧サイトのみ"
+  },
+  {
+   "id": "shima-spain-mura",
+   "name": "志摩スペイン村 パルケエスパーニャ",
+   "pref": "三重",
+   "city": "志摩市",
+   "type": "商業施設・テーマパーク",
+   "address": "三重県志摩市磯部町坂崎952-4（伊勢志摩観光ナビ記載）",
+   "access": "近鉄鵜方駅から直通バス約13分（伊勢志摩観光ナビ記載）",
+   "hours": "季節・曜日により変動（公式営業カレンダーで確認）",
+   "parking": "あり",
+   "cosplay_rule": "仮装・コスプレ撮影は可（公式ルールあり）。極端な露出・下着風、血のり・グロ表現、顔全体を隠す被り物・着ぐるみ、実在の制服・軍服、武器状の携行物、カラースプレー類は禁止。更衣室なし。授乳室・多目的トイレでの着替え・撮影は禁止。LIVE配信・営利目的の撮影は不可。",
+   "features": "スペインの街並みを再現した園内で、石畳や色鮮やかな建物を背景に撮れる。洋風・ファンタジー系の衣装と相性がよい。",
+   "official_url": "https://www.parque-net.com/",
+   "source_urls": [
+    "https://www.parque-net.com/information/costume.html",
+    "https://www.iseshima-kanko.jp/spot/1202"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  },
+  {
+   "id": "nagashima-spa-land",
+   "name": "ナガシマスパーランド",
+   "pref": "三重",
+   "city": "桑名市",
+   "type": "商業施設・テーマパーク",
+   "address": "三重県桑名市長島町浦安333",
+   "access": "近鉄・JR桑名駅から三重交通バス約20分「長島温泉」下車（桑名市公式観光サイト記載）",
+   "hours": "時期・曜日により異なる（公式で確認）",
+   "parking": "あり",
+   "cosplay_rule": "仮装・コスプレ可（公式ルールあり）。顔全体を覆う被り物・着ぐるみ、過度な露出、実在の公的機関の制服、婚礼衣装、武器を模した製作物や大型・長尺の小道具は不可。通常時の更衣スペースなし（トイレ・通路・駐車場での着替え不可）。営利目的・LIVE配信の撮影、長時間の場所占有は禁止。可否は入園時にスタッフが判断。",
+   "features": "観覧車やコースターなど大型アトラクションが並ぶ日本屈指の遊園地。カラフルな園内を背景に、動きのある撮影が楽しめる。",
+   "official_url": "https://www.nagashima-onsen.co.jp/spaland/",
+   "source_urls": [
+    "https://www.nagashima-onsen.co.jp/spaland/info/kaso.html",
+    "https://www.city.kuwana.lg.jp/kanko/miru/kankospot/kanko026.html"
+   ],
+   "checked": "2026-11-24",
+   "confidence": "公式で確認"
+  }
+ ]
+}
