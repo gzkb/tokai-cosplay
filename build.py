@@ -101,7 +101,7 @@ def page(title, body, desc, path, base, head_extra=""):
 <meta property="og:title" content="{esc(title)}"><meta property="og:type" content="website"><meta property="og:locale" content="ja_JP">
 <style>{CSS}</style>{head_extra}</head><body>
 <header><a class="t" href="{rel}index.html">✿ {SITE}</a>
-<nav><a href="{rel}index.html">イベント一覧</a><a href="{rel}venues/index.html">会場から探す</a><a href="{rel}about.html">このサイトについて</a></nav></header>
+<nav><a href="{rel}index.html">イベント一覧</a><a href="{rel}venues/index.html">会場から探す</a><a href="{rel}facilities/index.html">撮影できる施設</a><a href="{rel}about.html">このサイトについて</a></nav></header>
 <main>{body}</main>
 <footer>
 <p>イベントの日程・場所・参加条件は変更されることがあります。お出かけの前に、必ず各イベントの公式ページ・主催者の告知をご確認ください。</p>
@@ -218,6 +218,44 @@ document.querySelectorAll('.mon').forEach(s=>s.classList.toggle('hide',![...s.qu
             f"{name}で開催予定のコスプレイベントの一覧です。", f"venues/{slug}.html", base))
     open(OUT + "/venues/index.html", "w").write(page(f"会場から探す｜{SITE}",
         "<h1>会場から探す</h1><p class=\"lead\">これからイベントが予定されている会場です。</p>" + items, "コスプレイベントの会場ごとの予定一覧です。", "venues/index.html", base))
+
+    # --- facilities
+    fp = os.path.join(HERE, "data/facilities.json")
+    fac_urls = []
+    if os.path.exists(fp):
+        fd = json.load(open(fp)); F = fd["facilities"]
+        os.makedirs(OUT + "/facilities", exist_ok=True)
+        def conf(f):
+            return '<span class="b ok">公式で確認</span>' if f["confidence"] == "公式で確認" else '<span class="b ng">一覧サイトのみ</span>'
+        def row(k, v):
+            return f'<li><b>{k}</b>：{esc(v)}</li>' if v else ""
+        cards = ""
+        for f in F:
+            cards += (f'<div class="card" data-pref="{esc(f["pref"])}" data-type="{esc(f["type"])}"><div class="n"><a href="{f["id"]}.html">{esc(f["name"])}</a>{conf(f)}</div>'
+                      f'<div class="m">{esc(f["pref"])}県 {esc(f["city"])}｜{esc(f["type"])}</div><div class="m">{esc(f["features"])}</div></div>')
+            ul = "".join([row("住所", f["address"]), row("アクセス", f["access"]), row("営業時間", f["hours"]), row("駐車場", f["parking"]),
+                          row("コスプレのルール", f["cosplay_rule"] if f["cosplay_rule"] != "公式で確認" else "公式サイトで確認してください")])
+            off = f'<p><a href="{esc(f["official_url"])}" rel="noopener" target="_blank">公式サイト</a></p>' if f["official_url"] else ""
+            note = "" if f["confidence"] == "公式で確認" else '<p class="pr">この施設は、一覧サイトの情報をもとにしています。コスプレ撮影の可否や条件は、公式サイトまたは問い合わせで必ず確認してください。</p>'
+            q = quote(f["name"])
+            vb = (f'<h1>{esc(f["name"])}</h1><p class="lead">{esc(f["pref"])}県 {esc(f["city"])}｜{esc(f["type"])}（{conf(f)}）</p><p>{esc(f["features"])}</p>{note}'
+                  f'<ul class="l">{ul}</ul>{off}<p><a href="https://www.google.com/maps/search/?api=1&query={q}" rel="noopener" target="_blank">地図で場所を見る（Googleマップ）</a></p>'
+                  f'<p class="lead" style="font-size:.9rem">確認日：{esc(f["checked"])}。料金・営業時間・ルールは変わることがあります。</p><p><a href="index.html">← 施設の一覧へ戻る</a></p>')
+            open(f"{OUT}/facilities/{f['id']}.html", "w").write(page(f"{f['name']}｜コスプレ撮影｜{SITE}", vb,
+                f"{f['name']}（{f['pref']}県{f['city']}）のコスプレ撮影ルールとアクセス。", f"facilities/{f['id']}.html", base))
+            fac_urls.append(f"facilities/{f['id']}.html")
+        pb = "".join(f'<button data-p="{pf}">{pf}県</button>' for pf in ["愛知", "静岡", "岐阜", "三重"])
+        tb = "".join(f'<button data-t="{t}">{t}</button>' for t in sorted({f["type"] for f in F}))
+        ib = (f'<h1>東海でコスプレ撮影できる施設</h1><p class="lead">愛知・静岡・岐阜・三重で、コスプレ撮影ができるスタジオ・公園・施設をまとめています（{fd["asof"]}時点／{len(F)}件）。'
+              f'「公式で確認」は公式サイトで可否や条件を確認できたもの、「一覧サイトのみ」は一覧サイトの情報だけのものです。三重は確認できた施設が少なめです。</p>'
+              f'<div class="filter" id="fp"><button class="on" data-p="">すべて</button>{pb}</div><div class="filter" id="ft"><button class="on" data-t="">すべての種類</button>{tb}</div>'
+              f'<div id="cards">{cards}</div><script>let P="",T="";function ap(){{document.querySelectorAll("#cards .card").forEach(c=>c.classList.toggle("hide",(P&&c.dataset.pref!==P)||(T&&c.dataset.type!==T)))}}'
+              f'document.querySelectorAll("#fp button").forEach(b=>b.onclick=()=>{{document.querySelectorAll("#fp button").forEach(x=>x.classList.remove("on"));b.classList.add("on");P=b.dataset.p;ap()}});'
+              f'document.querySelectorAll("#ft button").forEach(b=>b.onclick=()=>{{document.querySelectorAll("#ft button").forEach(x=>x.classList.remove("on"));b.classList.add("on");T=b.dataset.t;ap()}});</script>'
+              f'<p class="lead">掲載してほしい施設・間違いは、<a href="{NOTE}">note</a> のコメントからお知らせください。</p>')
+        open(OUT + "/facilities/index.html", "w").write(page(f"東海でコスプレ撮影できる施設｜{SITE}", ib,
+            "愛知・静岡・岐阜・三重のコスプレ撮影スタジオ・公園・施設の一覧。公式で確認できた情報かどうかも表示。", "facilities/index.html", base))
+        fac_urls.append("facilities/index.html")
     # --- about
     ab = f"""<h1>このサイトについて</h1>
 <p>愛知・静岡・岐阜・三重の東海4県で開催されるコスプレイベントの予定をまとめています。運営しているのは、東海のイベントで撮影している、コスプレカメラマンのずっちーです。</p>
@@ -229,7 +267,7 @@ document.querySelectorAll('.mon').forEach(s=>s.classList.toggle('hide',![...s.qu
     open(OUT + "/about.html", "w").write(page(f"このサイトについて｜{SITE}", ab, "サイトの運営者、情報の集め方、広告について。", "about.html", base))
     # --- sitemap / robots
     if base:
-        urls = ["index.html", "about.html", "venues/index.html"] + [f"venues/{s}.html" for s in by if s != "other"]
+        urls = ["index.html", "about.html", "venues/index.html"] + fac_urls + [f"venues/{s}.html" for s in by if s != "other"]
         open(OUT + "/sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' +
             "".join(f"<url><loc>{base}/{u}</loc><lastmod>{today}</lastmod></url>" for u in urls) + "</urlset>")
         open(OUT + "/robots.txt", "w").write(f"User-agent: *\nAllow: /\nSitemap: {base}/sitemap.xml\n")
