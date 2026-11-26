@@ -91,7 +91,38 @@ h1{font-size:1.5rem;margin:18px 0 6px}h2{font-size:1.2rem;margin:28px 0 8px;bord
 .filter button.on{background:var(--pk);color:#fff}.btn{display:inline-block;background:var(--pk);color:#fff;border-radius:99px;padding:8px 18px;text-decoration:none;font-weight:700}
 .pr{background:var(--pk2);border-radius:10px;padding:8px 12px;font-size:.88rem;margin:14px 0}footer{color:var(--mut);font-size:.88rem;padding-top:30px;padding-bottom:40px}
 ul.l{padding-left:1.2em}.hide{display:none}
+.chk{display:flex;gap:8px;align-items:flex-start;cursor:pointer}.chk input{width:22px;height:22px;margin-top:3px;accent-color:var(--pk);flex:none}.card.sel{border-color:var(--pk);background:#fff4f9}
+#bar{position:sticky;bottom:0;background:#fff;border:1px solid var(--pk);border-radius:14px;padding:10px 14px;margin:14px 0;display:flex;gap:10px;align-items:center;flex-wrap:wrap;box-shadow:0 -2px 10px #e85a9a22}#bar button{border:0;border-radius:99px;padding:8px 18px;font-weight:700;font-size:.95rem;cursor:pointer}#mk{background:var(--pk);color:#fff}#mk:disabled{background:#ddd;cursor:default}#clr{background:#fff;color:var(--mut);border:1px solid var(--bd)!important}
 """
+
+
+CHECKJS = r"""
+<script>
+(function(){
+const KEY='tokai-cos-checked',cb=[...document.querySelectorAll('.chk input')];
+let st={};try{st=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+const mk=document.getElementById('mk'),cnt=document.getElementById('cnt');
+function upd(){const n=cb.filter(c=>c.checked).length;mk.disabled=!n;cnt.textContent=n?n+'件を選択中':'未選択';
+ cb.forEach(c=>c.closest('.card').classList.toggle('sel',c.checked));
+ const o={};cb.forEach(c=>{if(c.checked)o[c.dataset.k]=1});try{localStorage.setItem(KEY,JSON.stringify(o))}catch(e){}}
+cb.forEach(c=>{c.checked=!!st[c.dataset.k];c.onchange=upd});upd();
+document.getElementById('clr').onclick=()=>{cb.forEach(c=>c.checked=false);upd()};
+const e2=s=>String(s).replace(/\\/g,'\\\\').replace(/;/g,'\\;').replace(/,/g,'\\,').replace(/\n/g,'\\n');
+const ymd=s=>s.replace(/-/g,'');
+const nx=s=>{const d=new Date(s+'T00:00:00Z');d.setUTCDate(d.getUTCDate()+1);return d.toISOString().slice(0,10).replace(/-/g,'')};
+function fold(l){const o=[];let b=new TextEncoder(),cur='',len=0;for(const ch of l){const w=b.encode(ch).length;if(len+w>73){o.push(cur);cur=' '+ch;len=1+w}else{cur+=ch;len+=w}}o.push(cur);return o.join('\r\n')}
+async function md5(s){const h=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return [...new Uint8Array(h)].slice(0,12).map(x=>x.toString(16).padStart(2,'0')).join('')}
+mk.onclick=async()=>{
+ const now=new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d+/,'');
+ const L=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//tokai-cosplay-calendar//JP','CALSCALE:GREGORIAN','X-WR-CALNAME:東海コスプレイベント（選択分）','X-WR-TIMEZONE:Asia/Tokyo'];
+ for(const c of cb.filter(c=>c.checked)){const e=JSON.parse(c.dataset.ev);
+  L.push('BEGIN:VEVENT','UID:'+await md5(e.date+e.name)+'@tokai-cosplay','DTSTAMP:'+now,'DTSTART;VALUE=DATE:'+ymd(e.date),'DTEND;VALUE=DATE:'+nx(e.end||e.date),
+   'SUMMARY:'+e2(e.name),'LOCATION:'+e2(e.place),'DESCRIPTION:'+e2(e.status+(e.url?'\n'+e.url:'')+'\n日程・場所は公式でご確認ください'),'END:VEVENT')}
+ L.push('END:VCALENDAR');
+ const blob=new Blob([L.map(fold).join('\r\n')+'\r\n'],{type:'text/calendar;charset=utf-8'});
+ const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='tokai-cosplay-selected.ics';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),4000)};
+})();
+</script>"""
 
 
 def page(title, body, desc, path, base, head_extra=""):
@@ -110,7 +141,7 @@ def page(title, body, desc, path, base, head_extra=""):
 <p>Amazonのアソシエイトとして、ずっちーは適格販売により収入を得ています。</p></footer></body></html>"""
 
 
-def card(e, show_venue=True):
+def card(e, show_venue=True, check=False):
     meta = [fmt(e)]
     if e["pref"]:
         meta.append(e["pref"] + "県")
@@ -122,8 +153,13 @@ def card(e, show_venue=True):
         meta.append("参加費：" + e["fee"])
     link = f' <a href="{esc(e["url"])}" rel="noopener" target="_blank">公式・主催ページ</a>' if e["url"] else ""
     note = f'<div class="m">{esc(e["note"])}</div>' if e["note"] else ""
-    return (f'<div class="card" data-pref="{esc(e["pref"])}"><div class="n">{esc(e["name"])}{badge(e["status"])}</div>'
-            f'<div class="m">{esc("｜".join(meta))}{link}</div>{note}</div>')
+    inner = (f'<div class="n">{esc(e["name"])}{badge(e["status"])}</div>'
+             f'<div class="m">{esc("｜".join(meta))}{link}</div>{note}')
+    if check:
+        ev = json.dumps({k: e.get(k) or "" for k in ("date", "end", "name", "place", "status", "url")}, ensure_ascii=False)
+        k = hashlib.md5((e["date"] + e["name"]).encode()).hexdigest()[:10]
+        inner = f'<label class="chk"><input type="checkbox" data-k="{k}" data-ev="{esc(ev)}" aria-label="このイベントを選ぶ"><div>{inner}</div></label>'
+    return f'<div class="card" data-pref="{esc(e["pref"])}">{inner}</div>'
 
 
 def ics(events):
@@ -176,11 +212,13 @@ def main():
 <p class="lead">愛知・静岡・岐阜・三重の東海4県で、これから開催されるコスプレイベントを日付順にまとめています（{data['asof']}時点／約3か月先まで）。岐阜・三重は一覧に載る数が少なめなので、見つけ次第追加します。</p>
 <p><a class="btn" id="ics" href="events.ics">全イベントをカレンダーに登録（.ics）</a></p>
 <p class="lead" style="font-size:.9rem">下の県ボタンで絞り込むと、その県のイベントだけの .ics をダウンロードできます。ダウンロードした .ics を、iPhoneのカレンダー・Googleカレンダーなどで開くと、一度にまとめて登録できます。</p>
+<p class="lead" style="font-size:.9rem">行きたいイベントの左のチェックを入れると、画面の下の「チェックしたイベントだけ登録」ボタンで、選んだイベントだけの .ics を作れます（チェックはこの端末のブラウザに保存されます）。</p>
 <div class="filter" id="f"><button class="on" data-p="">すべて</button>{''.join(f'<button data-p="{esc(p)}">{esc(p)}県</button>' for p in prefs)}</div>"""
     for m, items in months.items():
         y, mo = m.split("-")
-        body += f'<section class="mon"><h2>{y}年{int(mo)}月</h2>' + "".join(card(e) for e in items) + "</section>"
-    body += f"""<div class="pr">※このページにはアフィリエイトリンク（PR）を含みます。</div>
+        body += f'<section class="mon"><h2>{y}年{int(mo)}月</h2>' + "".join(card(e, check=True) for e in items) + "</section>"
+    body += f"""<div id="bar"><button id="mk" disabled>チェックしたイベントだけ登録（.ics）</button><button id="clr">チェックをすべて外す</button><span id="cnt" class="lead"></span></div>
+<div class="pr">※このページにはアフィリエイトリンク（PR）を含みます。</div>
 <h2>イベントに行く前の準備</h2><p class="lead">Amazonの検索結果へのリンクです。</p><ul class="l">
 <li><a href="{amz('貼るカイロ')}" rel="sponsored noopener">貼るカイロ</a></li>
 <li><a href="{amz('ウィッグネット')}" rel="sponsored noopener">ウィッグネット</a></li>
@@ -195,6 +233,7 @@ const bs=document.querySelectorAll('#f button');bs.forEach(b=>b.onclick=()=>{{bs
 document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',p&&c.dataset.pref!==p));
 document.querySelectorAll('.mon').forEach(s=>s.classList.toggle('hide',![...s.querySelectorAll('.card')].some(c=>!c.classList.contains('hide'))));}});
 </script>"""
+    body += CHECKJS
     body = body.replace("__ICSMAP__", json.dumps(icsmap, ensure_ascii=False))
     open(OUT + "/index.html", "w").write(page(f"{SITE}｜愛知・静岡・岐阜・三重のイベント予定", body,
         "愛知・静岡・岐阜・三重など東海地方のコスプレイベントの予定を、日付順にまとめたカレンダーです。公式で確認できた情報かどうかも表示しています。", "index.html", base))
